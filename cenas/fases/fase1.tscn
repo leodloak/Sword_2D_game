@@ -1,0 +1,240 @@
+[gd_scene format=4 uid="uid://b6x7w0ce2767a"]
+
+[ext_resource type="Texture2D" uid="uid://6pab4787t3pk" path="res://assets/Terrain (16x16).png" id="1_580l7"]
+[ext_resource type="Script" uid="uid://bp4t31kq21l7q" path="res://scripts/fase_1.gd" id="1_otaat"]
+[ext_resource type="PackedScene" uid="uid://dq3427gtdmd8h" path="res://cenas/personagem.tscn" id="2_jykmu"]
+[ext_resource type="PackedScene" uid="uid://bke1f0wy5d464" path="res://cenas/ObjetosFase/propulsor.tscn" id="3_hyqsv"]
+[ext_resource type="PackedScene" uid="uid://dxx2gf5k1ci70" path="res://cenas/ObjetosFase/PropulsorDirecionado.tscn" id="4_otaat"]
+[ext_resource type="PackedScene" uid="uid://bs16057tjfnv1" path="res://cenas/ObjetosFase/desaparece.tscn" id="5_jykmu"]
+[ext_resource type="PackedScene" uid="uid://ia0t782rq6pf" path="res://cenas/ObjetosFase/bala.tscn" id="6_hyqsv"]
+[ext_resource type="PackedScene" uid="uid://csf2ximu4fyai" path="res://cenas/ObjetosFase/projetil_nao_letal.tscn" id="8_pb675"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qumu4"]
+texture = ExtResource("1_580l7")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+4:0/0 = 0
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:0/0 = 0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:0/0 = 0
+10:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+4:1/0 = 0
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:1/0 = 0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:1/0 = 0
+10:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+17:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+21:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+20:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+12:9/0 = 0
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+17:9/0 = 0
+18:9/0 = 0
+19:9/0 = 0
+20:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+13:10/0 = 0
+14:10/0 = 0
+15:10/0 = 0
+18:10/0 = 0
+19:10/0 = 0
+20:10/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_32upe"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_qumu4")
+
+[sub_resource type="GDScript" id="GDScript_2l3w2"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_qumu4"]
+
+[node name="fase" type="Node2D" unique_id=1561851883]
+script = ExtResource("1_otaat")
+municao = ExtResource("6_hyqsv")
+posini = Vector2(131, -112)
+
+[node name="TileMap" type="TileMap" parent="." unique_id=976046236]
+tile_set = SubResource("TileSet_32upe")
+format = 2
+
+[node name="Layer1" type="TileMapLayer" parent="TileMap" unique_id=540248519]
+use_parent_material = true
+tile_map_data = PackedByteArray("AAACABgAAAABAAAAAAADABgAAAABAAAAAAAEABgAAAABAAAAAAAFABcAAAABAAAAAAAGABcAAAABAAAAAAAHABcAAAABAAAAAAAIABcAAAABAAAAAAAJABcAAAABAAAAAAAKABcAAAABAAAAAAALABcAAAABAAAAAAAMABcAAAABAAAAAAANABcAAAABAAAAAAAOABcAAAABAAAAAAAPABcAAAABAAAAAAAQABcAAAABAAAAAAARABcAAAABAAAAAAASABcAAAABAAAAAAATABcAAAABAAAAAAAUABcAAAABAAAAAAAVABcAAAABAAAAAAAWABcAAAABAAAAAAAXABcAAAABAAAAAAAYABcAAAABAAAAAAAqAA4AAAABAAAAAAArAA4AAAABAAAAAAAsAA4AAAABAAAAAAAtAA4AAAABAAAAAAAuAA4AAAABAAAAAAAvAA4AAAABAAAAAAAwAA4AAAABAAAAAAAxAA4AAAABAAAAAAAyAA4AAAABAAAAAAAzAA4AAAABAAAAAAApAA4AAAABAAAAAAAoAA4AAAABAAAAAAAnAA4AAAABAAAAAAAFABgAAAABAAEAAAAGABgAAAABAAEAAAAHABgAAAABAAEAAAAIABgAAAABAAEAAAAJABgAAAABAAEAAAAKABgAAAABAAEAAAALABgAAAABAAEAAAAMABgAAAABAAEAAAANABgAAAABAAEAAAAOABgAAAABAAEAAAAPABgAAAABAAEAAAAQABgAAAABAAEAAAARABgAAAABAAEAAAASABgAAAABAAEAAAATABgAAAABAAEAAAAUABgAAAABAAEAAAAVABgAAAABAAEAAAAWABgAAAABAAEAAAAXABgAAAABAAEAAAAYABgAAAABAAEAAAAEABkAAAABAAEAAAADABkAAAABAAEAAAACABkAAAABAAEAAAAnAA8AAAABAAEAAAAoAA8AAAABAAEAAAApAA8AAAABAAEAAAAqAA8AAAABAAEAAAArAA8AAAABAAEAAAAsAA8AAAABAAEAAAAtAA8AAAABAAEAAAAuAA8AAAABAAEAAAAvAA8AAAABAAEAAAAwAA8AAAABAAEAAAAxAA8AAAABAAEAAAAyAA8AAAABAAEAAAAzAA8AAAABAAEAAADX////AAABAAAAAADY////AAABAAAAAADZ////AAABAAAAAADa////AAABAAAAAADb////AAABAAAAAADc////AAABAAAAAADd////AAABAAAAAADe////AAABAAAAAADf////AAABAAAAAADg////AAABAAAAAADh////AAABAAAAAADi////AAABAAAAAADi/wAAAAABAAEAAADh/wAAAAABAAEAAADg/wAAAAABAAEAAADf/wAAAAABAAEAAADe/wAAAAABAAEAAADd/wAAAAABAAEAAADc/wAAAAABAAEAAADb/wAAAAABAAEAAADa/wAAAAABAAEAAADZ/wAAAAABAAEAAADY/wAAAAABAAEAAADX/wAAAAABAAEAAAA=")
+tile_set = SubResource("TileSet_32upe")
+
+[node name="personagem" parent="." unique_id=1947300788 node_paths=PackedStringArray("municao") instance=ExtResource("2_jykmu")]
+position = Vector2(241, 336)
+scale = Vector2(1.5, 1.5)
+posinicial = Vector2(241, 336)
+municao = NodePath("")
+
+[node name="Camera2D" type="Camera2D" parent="personagem" unique_id=364977811]
+position_smoothing_enabled = true
+
+[node name="propulsor" parent="." unique_id=1685770679 instance=ExtResource("3_hyqsv")]
+position = Vector2(420, 327)
+
+[node name="propulsor2" parent="." unique_id=572742422 instance=ExtResource("3_hyqsv")]
+position = Vector2(528, 239)
+
+[node name="FimMundo" type="Area2D" parent="." unique_id=1024715919]
+position = Vector2(1, 630)
+script = SubResource("GDScript_2l3w2")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FimMundo" unique_id=1058213691]
+position = Vector2(558, 6)
+shape = SubResource("WorldBoundaryShape2D_qumu4")
+
+[node name="PropulsorDirecionado" parent="." unique_id=285394083 instance=ExtResource("4_otaat")]
+position = Vector2(680, 104)
+rotation = -1.5707964
+gravity_scale = 0.0
+
+[node name="propulsor3" parent="." unique_id=1066051585 instance=ExtResource("3_hyqsv")]
+position = Vector2(-495, 518)
+
+[node name="desaparece" parent="." unique_id=2090396687 instance=ExtResource("5_jykmu")]
+position = Vector2(-316, 99)
+posinicial = Vector2(-82, 324)
+
+[node name="Timer" type="Timer" parent="." unique_id=1145209224]
+wait_time = 2.0
+
+[node name="ProjetilNaoLetal" parent="." unique_id=1660056598 instance=ExtResource("8_pb675")]
+position = Vector2(183, -52)
+posinicial = Vector2(183, -52)
+
+[connection signal="body_entered" from="FimMundo" to="personagem" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="FimMundo" to="personagem" method="_on_fim_mundo_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

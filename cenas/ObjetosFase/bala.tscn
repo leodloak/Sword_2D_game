@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://ia0t782rq6pf"]
+
+[ext_resource type="Script" uid="uid://dqlwuvofaxsf8" path="res://scripts/bala.gd" id="1_5rsfk"]
+[ext_resource type="Texture2D" uid="uid://ck06p00kpjfq6" path="res://assets/File.png" id="2_i05y6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y5lx5"]
+size = Vector2(7, 12.5)
+
+[node name="bala" type="RigidBody2D" unique_id=1475339945]
+position = Vector2(422, 255)
+gravity_scale = 0.0
+script = ExtResource("1_5rsfk")
+speed = 600
+direcao = Vector2(0, 1)
+posinicial = Vector2(422, 255)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1050798427]
+texture_filter = 1
+rotation = 0.7330383
+scale = Vector2(0.5, 0.5555556)
+texture = ExtResource("2_i05y6")
+region_enabled = true
+region_rect = Rect2(0, 128, 17, 17)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=740844184]
+shape = SubResource("RectangleShape2D_y5lx5")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

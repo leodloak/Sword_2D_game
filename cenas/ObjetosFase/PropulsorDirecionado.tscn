@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dxx2gf5k1ci70"]
+
+[ext_resource type="Script" uid="uid://w8d2jsmt8kvj" path="res://scripts/propulsor_direcionado.gd" id="1_71t01"]
+[ext_resource type="Texture2D" uid="uid://blxs0x5jgw3oc" path="res://assets/Furnitures.png" id="2_cb4e4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0py0m"]
+size = Vector2(62, 63)
+
+[node name="PropulsorDirecionado" type="RigidBody2D" unique_id=285394083]
+script = ExtResource("1_71t01")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1061720100]
+shape = SubResource("RectangleShape2D_0py0m")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=366717200]
+texture = ExtResource("2_cb4e4")
+region_enabled = true
+region_rect = Rect2(187, 323, 76, 93)

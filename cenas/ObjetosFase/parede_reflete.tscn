@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cisx32nhmigw8"]
+
+[ext_resource type="Script" uid="uid://cjvf84kp1dh65" path="res://scripts/parede_reflete.gd" id="1_s3um1"]
+[ext_resource type="Texture2D" uid="uid://6pab4787t3pk" path="res://assets/Terrain (16x16).png" id="2_e5e3h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pyo34"]
+size = Vector2(8.499998, 38.299995)
+
+[node name="ParedeReflete" type="RigidBody2D" unique_id=1563597186]
+position = Vector2(165, 289)
+scale = Vector2(0.5, 0.5)
+mass = 10000.0
+gravity_scale = 0.0
+script = ExtResource("1_s3um1")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1599314110]
+position = Vector2(1.1920929e-07, -2.9802322e-08)
+scale = Vector2(10, 10)
+shape = SubResource("RectangleShape2D_pyo34")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1781668570]
+texture_filter = 1
+position = Vector2(1.347065e-05, -2.682209e-06)
+scale = Vector2(5.8214297, 8.391304)
+texture = ExtResource("2_e5e3h")
+region_enabled = true
+region_rect = Rect2(321, 129, 14, 46)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

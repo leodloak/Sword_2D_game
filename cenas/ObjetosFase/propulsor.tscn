@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bke1f0wy5d464"]
+
+[ext_resource type="Script" uid="uid://b75g15hjm82f6" path="res://scripts/propulsor.gd" id="1_fe753"]
+[ext_resource type="Texture2D" uid="uid://blxs0x5jgw3oc" path="res://assets/Furnitures.png" id="2_i1d4h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i1d4h"]
+size = Vector2(57, 54)
+
+[node name="propulsor" type="Node2D" unique_id=1685770679]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1756569604]
+texture_filter = 1
+gravity_scale = 0.0
+script = ExtResource("1_fe753")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1797025971]
+shape = SubResource("RectangleShape2D_i1d4h")
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=771868857]
+texture = ExtResource("2_i1d4h")
+region_enabled = true
+region_rect = Rect2(257, 323, 66, 61)

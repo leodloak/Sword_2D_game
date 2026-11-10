@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bs16057tjfnv1"]
+
+[ext_resource type="Script" uid="uid://d2nl7deltyhff" path="res://scripts/desaparece.gd" id="1_57y51"]
+[ext_resource type="Texture2D" uid="uid://blxs0x5jgw3oc" path="res://assets/Furnitures.png" id="2_sjrdp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vna63"]
+size = Vector2(90.5, 56.5)
+
+[node name="desaparece" type="RigidBody2D" unique_id=2090396687]
+gravity_scale = 0.0
+script = ExtResource("1_57y51")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1456009704]
+texture_filter = 1
+texture = ExtResource("2_sjrdp")
+region_enabled = true
+region_rect = Rect2(189, 126, 135, 103)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1005995170]
+shape = SubResource("RectangleShape2D_vna63")
+
+[node name="Timer" type="Timer" parent="." unique_id=1063820083]
+wait_time = 2.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

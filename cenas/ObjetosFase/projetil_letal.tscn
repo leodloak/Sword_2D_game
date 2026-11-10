@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b0n6d1pnugnwl"]
+
+[node name="ProjetilLetal" type="Node2D" unique_id=1131311909]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1288256565]
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=2030763772]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1971590003]

@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://csf2ximu4fyai"]
+
+[ext_resource type="Script" uid="uid://dr2omp6detgol" path="res://scripts/projetil_nao_letal.gd" id="1_lmt8o"]
+[ext_resource type="Texture2D" uid="uid://ck06p00kpjfq6" path="res://assets/File.png" id="2_7i03k"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nue1u"]
+radius = 7.0
+height = 32.0
+
+[node name="ProjetilNaoLetal" type="RigidBody2D" unique_id=1660056598]
+position = Vector2(599, 182)
+gravity_scale = 0.0
+script = ExtResource("1_lmt8o")
+speed = 500
+direcao = Vector2(0, 1)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=510332381]
+shape = SubResource("CapsuleShape2D_nue1u")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2035273756]
+texture_filter = 1
+position = Vector2(1.4901161e-05, -3.7327409e-06)
+rotation = 0.7853982
+scale = Vector2(1.3366026, 1.3366059)
+texture = ExtResource("2_7i03k")
+region_enabled = true
+region_rect = Rect2(0, 128, 16, 16)
